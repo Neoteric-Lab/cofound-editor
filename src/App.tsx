@@ -55,6 +55,7 @@ const App: React.FC<Props> = ({ width, height }) => {
 					const id = target.dataset?.cofound;
 					const newContents = contents.filter((content) => content.id !== id);
 					setContents(newContents);
+					focusFront();
 				}
 				break;
 			case 'ArrowUp':
